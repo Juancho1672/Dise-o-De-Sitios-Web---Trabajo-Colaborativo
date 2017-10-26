@@ -1,0 +1,81 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" href="estilos.css" />
+<link href="fonts.css" />
+<script src="http://code.jquery.com/jquery-latest.js">
+</script>
+<script src="jquery.slides.js"></script>
+<title>Slideshow</title>
+</head>
+<body>
+
+<div id="principio">
+<img src="UNAD.jpg" width="250" height="120" /></div>
+
+<header> 
+ <div class="menu_bar">
+<a href="" class="bt-menu"><span class="icon-menu"></span>Menú</a>
+</div>
+<nav>
+<ul>
+<li><a href=""><span class="icon-home"></span>Inicio</a>
+</li>
+<li class="submenu">
+<a href="#"><span class="icon-price-tag"></span>Introduccion Al Diseño De Sitios Web<span class="caret icon-arrow-down2"></span></a>
+<ul class="children">
+</li>
+</ul>
+</li>
+<li class="">
+<a href=""><span class="icon-earth"></span>Pasos Ha Seguir Para El Desarrollo De Un Sitio Web<span class="caret icon-arrow-down2"></span></a>
+<ul class="children">
+</a>
+</ul>
+</li>
+<li class="submenu">
+<a href="#"><span class="icon-clipboard"></span>Instroduccion Ha HTML5 y CSS3 Para La Creacion De Contenidos En Formato Web<span class="caret icon-arrow-down2"></span></a>
+<ul class="children">
+</span>
+</ul>
+</li>
+<li class="submenu">
+</li>
+<li><a href=""><span class="icon-envelop"></span>Contactenos</a></li>
+</ul>
+</nav>
+</header>
+
+<div class="main">
+<div class="slides">
+<img src="Git.jpg" alt="">
+<img src="HTML5.jpg" alt="">
+<img src="CSS3.jpg" alt="">
+</div>
+</div>
+	<script>
+	$(function(){
+  $(".slides").slidesjs({
+    play: {
+      active: true,
+        // [boolean] Generate the play and stop buttons.
+        // You cannot use your own buttons. Sorry.
+      effect: "slide",
+        // [string] Can be either "slide" or "fade".
+      interval: 3000,
+        // [number] Time spent on each slide in milliseconds.
+      auto: true,
+        // [boolean] Start playing the slideshow on load.
+      swap: true,
+        // [boolean] show/hide stop and play buttons
+      pauseOnHover: false,
+        // [boolean] pause a playing slideshow on hover
+      restartDelay: 2500
+        // [number] restart delay on inactive slideshow
+    }
+  });
+});
+</script>
+</body>
+</html>
